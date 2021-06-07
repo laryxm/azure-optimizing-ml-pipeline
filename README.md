@@ -48,11 +48,9 @@ The target variable **y** answer if the client has subscribed a term deposit.
 
 The Scikit-learn pipeline obtains the provided data from the provided URL. Following data download, a number of data cleaning steps are carried out including:
 
-1. Removing NAs from the dataset.
-2. One-hot encoding job titles, contact, and education variables.
-3. Encoding a number of other categorical variables.
-4. Encoding months of the year.
-5. Encoding the target variable.
+- Removing NAs from the dataset.
+- One-hot encoding job titles, contact, and education variables (categorical).
+- Encoding a number of other categorical variables, months of the year and target variable.
 
 
 ### Model
@@ -90,15 +88,12 @@ The best model selected by autoML was a voting ensemble with the accuracy as pri
 
 
 ## Pipeline comparison
-**Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
 The two models performed very similarly in terms of accuracy, with the hyperdive model achieving 91.54% accuracy and the autoML model achieving 91.67% accuracy. However, this study showed me that autoML process can bring excellent results with less effort and had a great performance in other metrics as well such as precision, recall and AUC which is more suitable for unbalanced data like in this case. 
 
 
 ## Future work
-**What are some areas of improvement for future experiments? Why might these improvements help the model?**
-
-In the future we can improve the model by: 
+In the future we can improve the results by: 
 
 - Exploring feature engineering process,
 - Testing scaling methods for the continuous variables,
