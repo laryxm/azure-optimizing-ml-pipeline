@@ -37,14 +37,16 @@ However, since it is an unbalanced data set, it is interesting to analyse other 
 
 ### Parameters used for AutoML
 
-```automl_config = AutoMLConfig(
-    experiment_timeout_minutes=15,
-    task="classification",
-    primary_metric="accuracy",
-    training_data=df_train,
-    label_column_name='y',
-    n_cross_validations=3,
-    )```
+```python
+automl_config = AutoMLConfig(
+   experiment_timeout_minutes=15,
+   task="classification",
+   primary_metric="accuracy",
+   training_data=df_train,
+   label_column_name='y',
+   n_cross_validations=3,
+   )
+    ```
 
 
 ## Scikit-learn Pipeline
