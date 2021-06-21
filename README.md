@@ -46,7 +46,7 @@ automl_config = AutoMLConfig(
    label_column_name='y',
    n_cross_validations=3,
    )
-    ```
+```
 
 
 ## Scikit-learn Pipeline
